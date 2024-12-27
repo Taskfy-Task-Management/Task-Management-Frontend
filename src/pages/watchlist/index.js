@@ -9,6 +9,10 @@ export default function WatchlistPage() {
   const [userId, setUserId] = useState(null);
 
   useEffect(() => {
+     /**
+     * Retrieves the user ID from the authentication token and fetches the watchlist.
+     * Redirects to the login page if the user is not logged in.
+     */
     const id = getUserIdFromToken();
     if (!id) {
       alert('You are not logged in!');
@@ -19,7 +23,12 @@ export default function WatchlistPage() {
     }
   }, []);
 
-  // Fetch all tasks in the user's watchlist
+  /**
+   * Fetches all tasks in the user's watchlist.
+   * Updates the `watchlist` state with the retrieved tasks.
+   * 
+   * @param {number} id - The ID of the user whose watchlist is being fetched.
+   */
   const fetchWatchlist = async (id) => {
     try {
       const response = await getWatchlist(id);
@@ -29,7 +38,12 @@ export default function WatchlistPage() {
     }
   };
 
-  // Remove a task from the watchlist
+  /**
+   * Removes a task from the user's watchlist.
+   * Updates the watchlist state after successful removal.
+   * 
+   * @param {number} taskId - The ID of the task to be removed from the watchlist.
+   */
   const handleRemove = async (taskId) => {
     if (confirm('Are you sure you want to remove this task from your watchlist?')) {
       try {
