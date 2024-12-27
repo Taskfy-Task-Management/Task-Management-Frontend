@@ -1,0 +1,67 @@
+.watchlistPage {
+  padding: 20px;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+}
+
+.watchlistTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.watchlistTable th,
+.watchlistTable td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.watchlistTable th {
+  background-color: #28a745;
+  color: white;
+}
+
+.watchlistTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.watchlistTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.watchlistTable button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.watchlistTable button:hover {
+  background-color: #e60000;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Back Button */
+.backButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.backButton:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,183 @@
+.projectsPage {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  color: #333;
+}
+
+.signOutButton {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.projectSection {
+  margin-bottom: 30px;
+}
+
+.projectList {
+  list-style: none;
+  padding: 0;
+}
+
+.projectList li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectList li span {
+  cursor: pointer;
+}
+
+.projectList li button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.projectList li button:hover {
+  background-color: #e60000;
+}
+
+.projectForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.projectForm input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.projectForm button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.projectForm button:hover {
+  background-color: #218838;
+}
+
+.tasksSection {
+  margin-top: 20px;
+}
+
+.tasksSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tasksSection li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskForm {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.taskForm input,
+.taskForm textarea,
+.taskForm select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.taskForm button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.taskForm button:hover {
+  background-color: #0056b3;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; /* Fully transparent */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: none; /* No shadow */
+}
+
+
+.navTitle {
+  font-size: 1.8rem;
+}
+
+.navActions {
+  display: flex;
+  gap: 10px;
+}
+
+.navButton,
+.signOutButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.navButton:hover,
+.signOutButton:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Cancel Button */
+.cancelButton {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.cancelButton:hover {
+  background-color: #a71d2a;
+}
