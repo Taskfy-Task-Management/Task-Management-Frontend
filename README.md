@@ -90,9 +90,6 @@ Here’s an overview of the key files and directories in the `src` folder:
 
 ```
 src/
-├── components/
-│   ├── Navbar.js         # Reusable Navbar component.
-│   └── Footer.js         # Footer component for consistent layout.
 ├── pages/
 │   ├── index.js          # Home/landing page with user registration.
 │   ├── auth/
@@ -110,9 +107,9 @@ src/
 │   ├── global.css        # Global CSS for styling the application.
 │   ├── Home.module.css   # Styles specific to the home page.
 │   └── Projects.module.css # Styles specific to the projects page.
+│   └── Watchlist.module.css # Styles specific to the Watchlist page.
 └── utils/
     ├── auth.js           # Helper functions for authentication.
-    └── validation.js     # Reusable validation logic (e.g., email, password).
 ```
 
 ---
